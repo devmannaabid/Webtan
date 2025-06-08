@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baiss Blog</title>
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<style>
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover; /* Ensures the image scales properly without distortion */
+    }
+
+    body {
+      background-image: url();
+    }
+  </style>
+<body >
+
+    <!-- navber -->
+     <header class="p-3 text-light bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!-- logo -->
+                 <div class="">
+                    <a href="index.html" class="navbar-brand fw-bold text-light fs-3"><span class="text-info">Web</span>Ten</a>
+                 </div>
+                 <!-- nav -->
+                  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-auto">
+                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="profile.html" class="nav-link px-2 text-white">Profile</a></li>
+                    <li class="nav-item-dropdwn">
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                            <li><a class="dropdown-item" href="partner.html">Our Partner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item-dropdwn">
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">News</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+                            <li><a class="dropdown-item" href="event.html">Our Event</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+                  </ul>
+                  <!-- search box -->
+                   <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                   </form>
+                  <!-- user  -->
+                   <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/profile.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                      <li></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="bi bi-person-circle"></i> Admine</a></li>
+                      <li><a class="dropdown-item" href="log out.html"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                      <li></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+     </header>
+
+     
+     <!-- slider -->
+      <!-- <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="corousel-item active">
+                <img src="img/slide 2.jpg" class="d-block w-100" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-dark">Example headline.</h1>
+                        <p class="opacity-75 text-dark">Some representative placeholder content for the first slide of the carousel.</p>
+                        <form class="d-flex w-50 " role="search">
+                            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-info rounded-pill" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="corousel-item">
+                <img src="img/slide 2.jpg" class="d-block w-100" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-dark">Another example headline.</h1>
+                        <p class="text-dark">Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-info" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="corousel-item">
+                <img src="img/slide 2.jpg" class="d-block w-100" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-dark">One more for good measure.</h1>
+                        <p class="text-dark">Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-info" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide 2.jpg" class="d-block w-100" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="text-dark fw-bold">Example headline.</h1>
+              <p class=" fw-bold text-dark">Some representative placeholder content for the first slide of the carousel.</p>
+              <form class="d-flex w-50 " role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-info rounded-pill" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide 2.jpg" class="d-block w-100" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="text-dark fw-bold">Another example headline.</h1>
+              <p class="text-dark fw-bold">Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-info" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide 2.jpg" class="d-block w-100" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 class="text-dark fw-bold">One more for good measure.</h1>
+              <p class="text-dark fw-bold">Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-info" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+     </div> 
+
+     <!-- about -->
+      <section class=" container mt-5">
+        <h1 class="fw-bold text-info">About Us</h1>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+      </section>
+      <section class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+            <h2 class="fw-bold">Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus soluta harum nisi, architecto corrupti ut! Ullam iusto quos magnam dolores impedit adipisci veritatis vitae porro error repellendus voluptates, atque reprehenderit obcaecati, id unde blanditiis culpa corrupti sapiente autem reiciendis sit exercitationem, nisi quia? Magnam doloremque itaque, maiores, perspiciatis maxime quod provident modi sequi praesentium voluptas nihil sapiente omnis. Soluta, maxime.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus laudantium sed, error ipsam aperiam pariatur ad modi magnam enim optio voluptatem recusandae quae vel incidunt corporis totam! Ex vero ratione soluta unde ea optio, nostrum mollitia cupiditate dolor commodi iusto explicabo, alias maiores animi iste sunt exercitationem magnam totam.</p>
+            <p><a href="about.html" class="btn btn-outline-info">View More</a></p>
+        </div>
+        <div class="col-md-6">
+            <img src="img/about.png" class="img-fluid rounded" alt="Our Team">
+        </div>
+        </div>
+      </section>
+
+      <!-- Banner Modal -->
+  <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bannerModalLabel">Welcome!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/slide 2.jpg" alt="Banner" class="img-fluid" style="width: 1000px; height: 400px;" />   
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- services -->
+       <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Services</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <a href="services.html" class="btn btn-outline-info">See All</a>
+        </div>
+       </section>
+       <section class="container mb-4">
+        <div class="row row-cols-1 row-cols-md-4  g-4">
+          <!-- card 1 -->
+          <div class="col md-4">
+            <div class="card h-100">
+                <img src="img/website devolopment.png" class="card-img-top" height="200" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">View details &raquo;</a>
+                </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col md-4">
+            <div class="card h-100">
+                <img src="img/app devolopment.png" class="card-img-top" height="200" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">App Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">View details &raquo;</a>
+                </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col md-4">
+            <div class="card h-100">
+                <img src="img/databasepreview.png" class="card-img-top" height="200" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Database development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">View details &raquo;</a>
+                </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col md-4">
+            <div class="card h-100">
+                <img src="img/game.png" class="card-img-top" height="200" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Game Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-info">View details &raquo;</a>
+                </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- blog -->
+        <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Blogs</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <a href="blog.html" class="btn btn-outline-info">See All</a>
+        </div>
+        </section>
+        <section class="py-1">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- card 1 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/slide 1.png" class="card-img-top" height="230" alt="Blog Image 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Blog Title 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia nam veniam illo omnis nisi assumenda est aperiam natus ex?</p>
+                    <a href="#" class="btn btn-info mt-auto">View</a>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/slide 1.png" class="card-img-top" height="230" alt="Blog Image 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Blog Title 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia nam veniam illo omnis nisi assumenda est aperiam natus ex?</p>
+                    <a href="#" class="btn btn-info mt-auto">View</a>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/slide 1.png" class="card-img-top" height="230" alt="Blog Image 1">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Blog Title 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia nam veniam illo omnis nisi assumenda est aperiam natus ex?</p>
+                    <a href="#" class="btn btn-info mt-auto">View</a>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       <!-- team -->
+        <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Team</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <a href="team.html" class="btn btn-outline-info">See All</a>
+        </div>
+        </section>
+        <section class="container">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- card 1 -->
+             <div class="col md-4">
+              <div class="card h-100 text-center">
+                <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card-1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
+                  <ul class="list-unstyled d-flex fs-2 justify-content-center">
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-success btn-sm me-2"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+             <!-- card 2 -->
+             <div class="col md-4">
+              <div class="card h-100 text-center">
+                <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card-2</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
+                  <ul class="list-unstyled d-flex fs-2 justify-content-center">
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-success btn-sm me-2"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+             <!-- card 3 -->
+             <div class="col md-4">
+              <div class="card h-100 text-center">
+                <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card-3</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
+                  <ul class="list-unstyled d-flex fs-2 justify-content-center">
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-success btn-sm me-2"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+             <!-- card 4 -->
+             <div class="col md-4">
+              <div class="card h-100 text-center">
+                <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
+                <div class="card-body">
+                  <h5 class="card-title">Card-4</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
+                  <ul class="list-unstyled d-flex fs-2 justify-content-center">
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-success btn-sm me-2"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+
+          </div>
+        </section>
+        
+        <!-- event -->
+        <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Event</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <a href="event.html" class="btn btn-outline-info">See All</a>
+        </div>
+        </section>
+        <sectioon class="py-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- card 1 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/slide 2.jpg" class="card-img-top" height="230" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus assumenda cupiditate est mollitia quibusdam at quae minus dignissimos voluptatibus consectetur quos non aliquid corporis hic id sit animi obcaecati sed quo exercitationem.</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                </div>
+              </div>
+            </div>
+             <!-- card 2 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/slide 2.jpg" class="card-img-top" height="230" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus assumenda cupiditate est mollitia quibusdam at quae minus dignissimos voluptatibus consectetur quos non aliquid corporis hic id sit animi obcaecati sed quo exercitationem.</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                </div>
+              </div>
+            </div>
+             <!-- card 3 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/slide 2.jpg" class="card-img-top" height="230" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus assumenda cupiditate est mollitia quibusdam at quae minus dignissimos voluptatibus consectetur quos non aliquid corporis hic id sit animi obcaecati sed quo exercitationem.</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text"><small class="text-muted">Date: 07 June 2025 | Time: 11:00 AM</small></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </sectioon>
+
+        <!-- out partner -->
+        <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Partner</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <a href="partner.html" class="btn btn-outline-info">See All</a>
+        </div>
+        </section>
+        <section class="mt-0">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-6 g-3">
+              <!-- card 1 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div>
+               <!-- card 2 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div>
+               <!-- card 3 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div>
+               <!-- card 4 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div>
+               <!-- card 5 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div>
+               <!-- card 6 -->
+               <div class="col">
+                <div class="card">
+                  <img src="img/download.png" class="card-img-top" height="85" alt="...">      
+                </div>
+               </div> 
+            </div>
+          </div>
+        </section>
+
+        <!-- reviwew -->
+        <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="fw-bold text-info">Our Review</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa.</p>
+          </div>
+          <!-- <a href="#" class="btn btn-outline-info">See All</a> -->
+        </div>
+        </section>
+        <section class="py-0">
+          <div class="container">
+            <div class="bg-light bg-opacity-25 text-dark rounded-3 p-4 p-md-5">
+              <div class="row align-items-center">
+                <!-- left -->
+                 <div class="col-md-6 mb-4 mb-md-0">
+                  <h2 class="fw-bold mb-3">Our Story</h2>
+                  <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio provident et ipsam aspernatur at eius, quas repellat molestiae eaque labore similique libero, esse quia architecto non laudantium distinctio? Necessitatibus ratione voluptas dignissimos, recusandae sit numquam iste id eos et eum eveniet quia cum dolore impedit adipisci quam accusamus facere in voluptatem? Quisquam, necessitatibus. Molestiae tenetur architecto, quod ullam asperiores ab est, ea a voluptatum eaque labore odio atque dicta optio nulla distinctio incidunt odit cupiditate.</p>
+                  <!-- User Info -->
+                  <div class="d-flex align-items-center mt-4">
+                    <!-- User Image -->
+                    <img src="img/profile.png" alt="User" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                    <!-- Name and Rating -->
+                    <div>
+                      <h5 class="mb-1 fw-semibold">John Doe</h5>
+                      <!-- Rating -->
+                      <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <span class="text-muted ms-2">(4.5)</span>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                 <!-- right -->
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <div class="position-relative">
+                      <img src="img/slide 2.jpg" class="img-fluid rounded shadow" alt="Our Team">
+                      <a class="btn position-absolute top-50 start-50 translate-middle text-info" 
+                      data-bs-toggle="modal" data-bs-target="#videoModal" style="font-size: 48px;">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Footer -->
+     <footer class="py-5 bg-dark text-light mt-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h4 class="text-info">Section</h4>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h4 class="text-info">Section</h4>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h4 class="text-info">Section</h4>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h2 class="fw-bold"><span class="text-info">Web</span>Ten</h2>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-info" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex fs-2">
+                <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" class="btn btn-outline-success btn-sm me-2"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-github"></i></a></li>
+              </ul>
+            </div>
+        </div>
+     </footer>
+
+        
+
+
+    
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <script src="script.js"></script>
+
+    <!-- model -->
+     <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9 rounded-4">
+          <video id="videoPlayer" class="w-100 h-100 rounded-3" controls preload="metadata" playsinline>
+            <source src="video/Darkside「AMV」Anime Mix.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+     </div>
+
+     <div class="modal fade" id="exampleModalToggle" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5 text-info" id="exampleModalToggleLabel">Login</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-info w-100">Login</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <p class="mb-0">Don't have an account?</p>
+      <button class="btn btn-info" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Register</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5 text-info" id="exampleModalToggleLabel2">Register</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="registerName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="registerName" placeholder="Enter full name">
+        </div>
+        <div class="mb-3">
+          <label for="registerEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+          <label for="registerPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="registerPassword" placeholder="Create password">
+        </div>
+        <div class="mb-3">
+          <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm password">
+        </div>
+        <button type="submit" class="btn btn-info w-100">Register</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a class="mb-0" href="admin.html">Admin</a>
+      <button class="btn btn-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
