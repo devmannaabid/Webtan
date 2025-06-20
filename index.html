@@ -79,7 +79,7 @@
       <img src="img/ribbon.jpg" class="d-block w-100" alt="First slide">
       <div class="container">
         <div class="carousel-caption text-start">
-          <h3 class="text-light fw-bold">Example headline.</h3>
+          <h2 class="text-light fw-bold">Example headline.</h2>
           <p class="fw-bold text-light">Some representative placeholder content for the first slide of the carousel.</p>
           <form class="d-flex w-75" role="search">
             <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
@@ -92,7 +92,7 @@
       <img src="img/ribbon.jpg" class="d-block w-100" alt="Second slide">
       <div class="container">
         <div class="carousel-caption">
-          <h3 class="text-light fw-bold">Another example.</h3>
+          <h2 class="text-light fw-bold">Another example headline.</h2>
           <p class="text-light fw-bold">Some representative placeholder content for the second slide of the carousel.</p>
           <a class="btn btn-info rounded-pill" href="#">Learn more</a>
         </div>
@@ -102,7 +102,7 @@
       <img src="img/ribbon.jpg" class="d-block w-100" alt="Third slide">
       <div class="container">
         <div class="carousel-caption text-end">
-          <h3 class="text-light fw-bold">One more for good.</h3>
+          <h2 class="text-light fw-bold">One more for good measure.</h2>
           <p class="text-light fw-bold">Some representative placeholder content for the third slide of this carousel.</p>
           <a class="btn btn-info rounded-pill" href="#">Browse gallery</a>
         </div>
@@ -138,19 +138,31 @@
       </section>
 
       <!-- Banner Modal -->
-  <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Added modal-lg for wider modal -->
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="bannerModalLabel">Welcome!</h5>
+        <div class="modal-header sticky-top bg-white">
+          <h5 class="modal-title" id="bannerModalLabel">Special Offer!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body text-center">
-          <img src="img/slide 2.jpg" alt="Banner" class="img-fluid" style="width: 1000px; height: 400px;" />   
+        <div class="modal-body">
+          <div class="row align-items-center"> <!-- Using Bootstrap grid -->
+            <div class="col-md-6"> <!-- Image column -->
+              <img src="img/slide 2.jpg" alt="Banner" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 text-center text-md-start"> <!-- Text column -->
+              <h4 class="mb-3">Limited Time Membership</h4>
+              <p class="mb-4">Join our membership program and enjoy exclusive benefits!</p>
+              <button class="btn btn-outline-info">Join Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <small>Offer valid until June 30, 2023</small>
         </div>
       </div>
     </div>
-  </div>
+</div>
 
       <!-- services -->
        <section class="container mt-5">
@@ -281,7 +293,7 @@
               <div class="card h-100 text-center">
                 <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card-1</h5>
+                  <h5 class="card-title">Md.Anik</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
                   <ul class="list-unstyled d-flex fs-2 justify-content-center">
                     <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
@@ -298,7 +310,7 @@
               <div class="card h-100 text-center">
                 <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card-2</h5>
+                  <h5 class="card-title">Md.Abid</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
                   <ul class="list-unstyled d-flex fs-2 justify-content-center">
                     <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
@@ -315,7 +327,7 @@
               <div class="card h-100 text-center">
                 <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card-3</h5>
+                  <h5 class="card-title">Md.Salman</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
                   <ul class="list-unstyled d-flex fs-2 justify-content-center">
                     <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
@@ -332,7 +344,7 @@
               <div class="card h-100 text-center">
                 <img src="img/profile.png" class="card-img-top rounded-circle mt-3 mx-auto" alt="Image 1" style="width: 140px; height: 140px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card-4</h5>
+                  <h5 class="card-title">Md.Rafin</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe.</p>
                   <ul class="list-unstyled d-flex fs-2 justify-content-center">
                     <li><a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-facebook"></i></a></li>
@@ -490,6 +502,9 @@
                       </div>
                     </div>
                   </div>
+                  <div class=" mt-2">
+                    <button type="button" class="btn btn-outline-info">Your Review</button>
+                  </div>
                  </div>
                  <!-- right -->
                   <div class="col-md-6 d-flex justify-content-center">
@@ -572,10 +587,14 @@
         </div>
      </footer>
 
-        
+     <div class="container">
+    <!-- Your content here --> 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="btn btn-outline-info fw-bold position-fixed" style="bottom: 20px; right: 19.1rem;">
+       <i class="bi bi-arrow-up-short fw-bold"></i> 
+    </button>
+</div>
 
-
-    
      <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
     <script src="js/script.js"></script>
@@ -587,7 +606,7 @@
       <div class="modal-body p-0">
         <div class="ratio ratio-16x9 rounded-4">
           <video id="videoPlayer" class="w-100 h-100 rounded-3" controls preload="metadata" playsinline>
-            <source src="video/Darkside「AMV」Anime Mix.mp4" type="video/mp4">
+            <source src="videos/4K Beautiful Anime Scenery.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -653,7 +672,7 @@
       </form>
     </div>
     <div class="modal-footer">
-      <a class="mb-0" href="admin.html">Admin</a>
+      <a class="mb-0" href="admin/admin.html">Admin</a>
       <button class="btn btn-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
     </div>
   </div>
