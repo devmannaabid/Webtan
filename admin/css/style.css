@@ -1,0 +1,18 @@
+/* Default: carousel has auto height */
+/* On desktop (lg and up), limit height to 50vh */
+@media (min-width: 992px) {
+  .custom-carousel-height {
+    height: 50vh;
+  }
+  .custom-carousel-height .carousel-item {
+    height: 50vh;
+  }
+  .custom-carousel-height .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+    body {
+      background-image: url();
+    }
